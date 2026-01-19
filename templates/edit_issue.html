@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Edit Issue</h2>
+
+<form method="post" action="/issues/{{ issue[0] }}/edit">
+  Title:<br><input name="title" value="{{ issue[1] }}"><br>
+  Status:<br><input name="status" value="{{ issue[2] }}"><br>
+  Priority:<br><input name="priority" value="{{ issue[3] }}"><br>
+  <button type="submit">Save</button>
+</form>
+
+{% endblock %}

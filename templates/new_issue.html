@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>New Issue</h2>
+
+<form method="post">
+  Title:<br><input name="title"><br>
+  Status:<br><input name="status" value="open"><br>
+  Priority:<br><input name="priority" value="medium"><br>
+  <button type="submit">Create</button>
+</form>
+
+{% endblock %}
